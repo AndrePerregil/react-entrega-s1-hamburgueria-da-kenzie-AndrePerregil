@@ -1,0 +1,25 @@
+.storeContainer {
+  display: flex;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  gap: 10px;
+  width: 100vw;
+  padding: 15%;
+  scroll-snap-type: x proximity;
+  box-shadow: 0 0 3px black, 0 0 5px #0fa, 0 0 10px #0fa;
+}
+
+@media only screen and (min-width: 600px) {
+  .storeContainer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    box-shadow: none;
+    padding: 10px;
+    overflow-x: hidden;
+    flex-direction: row;
+    max-width: 700px;
+  }
+}
